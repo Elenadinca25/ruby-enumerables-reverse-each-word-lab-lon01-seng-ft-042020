@@ -1,4 +1,5 @@
 def reverse_each_word(string)
-  string
+puts "#{string}"
+wordsReversed = text.split(" ").reverse.join(" ")
+
 end
-puts reverse_each_word ("Hello there, and how are you?")
