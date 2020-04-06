@@ -1,3 +1,3 @@
 def reverse_each_word(string)
-  string.reverse
+  string.reverse_each { |x| print x }
 end
