@@ -1,4 +1,4 @@
-
+=begin
 def reverse_each_word(string)
 array = string.split(" ")
 my_array = []
@@ -9,8 +9,6 @@ my_array.join(" ")
 end
 
 
-
-=begin
 def reverse_each_word(string)
   reversed = string.split(" ").collect do |word|
     word.reverse
@@ -19,13 +17,20 @@ def reverse_each_word(string)
 end
 =end
 
+def reverse_each_word_with_each(string)
+  original_array = string.split(" ")
+ return_array = []
+ original_array.each do|string|
+   return_array << string.reverse
+ end
+ return_array.join(" ")
+end
 
 def reverse_each_word(string)
-array = string.split(" ")
-
-new_array = []
-array.each do |string|
-  new_array << string.reverse
-end
-new_array.join(" ")
+  array = string.split(" ")
+  test_array = []
+  array.collect do|string|
+    test_array << string.reverse
+  end
+test_array.join(" ")
 end
